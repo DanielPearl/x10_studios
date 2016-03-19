@@ -1,118 +1,98 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<title></title>
-	<meta charset="UTF-8">
-	<meta name="description" content="">
-	<meta name="keywords" content="HTML, CSS">
-	<meta name="author" content="mple by Michael Williams">
-	<link href='https://fonts.googleapis.com/css?family=Raleway:400,300' rel='stylesheet' type='text/css'>
-	<style>
-		body {
-			font-family: sans-serif;
-			text-align: center;
-		}
-		h1 {
-			font-family: 'Raleway', sans-serif;
-			letter-spacing: .2em;
-			font-size: 2.7em;
-			margin-bottom: 10px;
-			font-weight: lighter;
-		}
-		li	{
-			text-align: left;
-		}
-	</style>
-</head>
-<body>
+<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 
-	<!-- copy into squarespace -->
-	<h1 style="text-align: center;
-               margin-bottom: 0px;
-               letter-spacing: 0.25em;">COMPARISON</h1>
-	<div style="display:table; 
-                border-spacing: 10px; 
-                border-collapse: separate; 
-                margin: 0 auto;">
-		<div>
-			<section style="background-color: #959595;
-                            color: #fff;
-                            padding: 2.5% 1%;
-                            border-radius: 20px;
-                            width: 30%;
-                            max-width: 200px;
-                            vertical-align: top;
-                            display: table-cell;">
-				<h2 style="	margin: 0; 
-                           font-size: 1.4em;
-                           font-weight: 400;
-                           text-align: center;
-                           color: #201713;">Urban<br>Gourmet</h2>
-				<ol style="padding-left: 27.5px;
-                           margin-top: 10px;">
-					<li style="font-weight: 200; 
-                               font-size: .95em">Locally Sourced Organics</li>
-					<li style="font-weight: 200; 
-                               font-size: .95em">Gluten Free Kitchen</li>
-					<li style="font-weight: 200; 
-                               font-size: .95em">Paleo Based</li>
-					<li style="font-weight: 200; 
-                               font-size: .95em">Vegan By Request</li>
-					<li style="font-weight: 200; 
-                               font-size: .95em">Health Smoothies</li>
-					<li style="font-weight: 200; 
-                               font-size: .95em">Delivery Included</li>
-					<li style="font-weight: 200; 
-                               font-size: .95em">Monthly Meal Plans<br>
-						Average cost per meal: &dollar;15</li>
-					<li style="font-weight: 200; 
-                               font-size: .95em">Automated Savings</li>
-				</ol>
-				<p style="font-size: 1.7em;
-                          font-weight: 200;
-                          margin-bottom: 10px;
-                          text-align: center;">325&percnt; ROI per meal</p>
-			</section>
-			<section style="background-color: #959595;
-                            color: #fff;
-                            padding: 2.5% 1%;
-                            border-radius: 20px;
-                            width: 30%;
-                            max-width: 200px;
-                            vertical-align: top;
-                            display: table-cell;
-                            margin-left: 2%;
-                            border-left: 30px;">
-				<h2 style="	margin: 0; 
-                           font-size: 1.4em;
-                           font-weight: 400;
-                           text-align: center;
-                           color: #201713;">Restaurant<br>Gourmet</h2>
-				<ol style="padding-left: 27.5px;
-                           margin-top: 10px;">
-					<li style="font-weight: 200; 
-                               font-size: .95em">Sometimes Organic</li>
-					<li style="font-weight: 200; 
-                               font-size: .95em">Gluten Free Kitchens are Rare</li>
-					<li style="font-weight: 200; 
-                               font-size: .95em">Sometimes Paleo</li>
-					<li style="font-weight: 200; 
-                               font-size: .95em">Sometimes Vegan</li>
-					<li style="font-weight: 200; 
-                               font-size: .95em">Health Smoothies are a Rarity</li>
-					<li style="font-weight: 200; 
-                               font-size: .95em">Travel Time. Parking &plus; Energy To Dress Up</li>
-					<li style="font-weight: 200; 
-                               font-size: .95em">Average Cost Per Meal: &dollar;35 &plus; tip</li>
-					<li style="font-weight: 200; 
-                               font-size: .95em">A Bermuda Triangle For Your Money Based On Whim</li>
-				</ol>
-			</section>
-		</div>
+<style>
+
+	.comparison {
+		font-family: 'Raleway', sans-serif;
+		text-align: center;
+        margin-bottom: 0px;
+        letter-spacing: 0.25em;
+	}
+	.tablets {
+		display:table;
+        border-spacing: 10px;
+        border-collapse: separate;
+        margin: 0 auto;
+	}
+	.gourmet {
+		font-family: 'Raleway', sans-serif;
+		letter-spacing: .2em;
+		font-size: 2.7em;
+		margin-bottom: 10px;
+		font-weight: lighter;
+	}
+	.left, .right {
+		background-color: #959595;
+        color: #fff;
+        padding: 10px;
+        border-radius: 20px;
+        width: 200px;
+        /*max-width: 200px;*/
+        vertical-align: top;
+        display: table-cell;
+		background: -o-linear-gradient(bottom right, darkgrey, grey);
+		background: -webkit-linear-gradient(left top, darkgrey, grey); /* For Safari 5.1 to 6.0 */
+		background: -o-linear-gradient(bottom right, darkgrey, grey); /* For Opera 11.1 to 12.0 */
+		background: -moz-linear-gradient(bottom right, darkgrey, grey); /* For Firefox 3.6 to 15 */
+		background: linear-gradient(to bottom right, darkgrey, grey); /* Standard syntax */
+	}
+	/*section + section {
+        margin-left: 2%;
+        border-left: 30px;
+	}*/
+	.left h2, .right h2 {
+		font-size: 1.4em;
+		font-weight: 400;
+		text-align: center;
+		color: #201713;
+	}
+	.left-text li, .right-text li{
+		font-family: 'Raleway', sans-serif;
+       	margin-top: 10px;
+		font-weight: 200;
+        font-size: .95em;
+	}
+	/*p {
+		font-size: 1.7em;
+		font-weight: 200;
+		margin-bottom: 15px;
+		text-align: center;
+	}*/
+</style>
+
+<h1></h1>
+
+<!-- copy into squarespace -->
+<h1 class = "comparison">COMPARISON</h1>
+<article class="tablets">
+	<div class = "tablets">
+		<section class = "left">
+			<h2 class = "gourmet">Urban<br>Gourmet</h2>
+			<ol class = "left-text">
+				<li>Locally Sourced Organics</li>
+				<li>Gluten Free Kitchen</li>
+				<li>Paleo Based</li>
+				<li>Vegan By Request</li>
+				<li>Health Smoothies</li>
+				<li>Delivery Included</li>
+				<li>Monthly Meal Plans<br>
+					Average cost per meal: &dollar;15</li>
+				<li>Automated Savings</li>
+			</ol>
+		</section>
+		<section class = "right">
+			<h2 class = "gourmet">Restaurant<br>Gourmet</h2>
+			<ol class = "right-text">
+				<li>Sometimes Organic</li>
+				<li>Gluten Free Kitchens are Rare</li>
+				<li>Sometimes Paleo</li>
+				<li>Sometimes Vegan</li>
+				<li>Health Smoothies are a Rarity</li>
+				<li>Travel Time. Parking &plus; Energy To Dress Up</li>
+				<li>Average Cost Per Meal: &dollar;35 &plus; tip</li>
+				<li>A Bermuda Triangle For Your Money Based On Whim</li>
+			</ol>
+		</section>
 	</div>
-	<!-- end squarespace -->
-
-</body>
-</html>
-
-
+</article>
+<!-- end transfer to website -->
